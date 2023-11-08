@@ -42,7 +42,6 @@ module Awscr
               if header = request.headers["Host"]?
                 if header.includes?(":")
                   host, _, port = header.rpartition(":")
-                  puts host, port
                   unless port == ""
                     str << ":"
                     str << port
